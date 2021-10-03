@@ -1,0 +1,30 @@
+[requires]
+zlib/1.2.11
+catch2/2.5.0@bincrafters/stable
+libcurl/7.70.0
+openssl/[~=3.0.0]
+cmake/[>1.1 || 0.8]@bincrafters/stable
+spdlog/[~1.2.3, loose=False, include_prerelease=True]@bincrafters/stable
+
+[build_requires]
+freetype/2.10.0
+protobuf/3.11.3
+poco/[>1.0,<1.8]
+7zip/[16.00]@bincrafters/stable
+boost/[1.2.7 || >=1.2.9 <2.0.0]
+imgui/[>1.1 <2.1, include_prerelease=True]@bincrafters/stable
+fmt/[~1.2.3, loose=False]
+
+
+[options]
+poco:shared=True
+openssl:shared=True
+
+[generators]
+xcode
+cmake
+qmake
+
+[imports]
+bin, *.dll -> ./bin # Copies all dll files from packages bin folder to my local "bin" folder
+lib, *.dylib* -> ./bin # Copies all dylib files from packages lib folder to my local "bin" folder
