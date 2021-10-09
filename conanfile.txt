@@ -1,7 +1,7 @@
 [requires]
 zlib/1.2.11
 catch2/2.5.0@bincrafters/stable
-libcurl/7.70.0
+libcurl/7.79.1 
 openssl/[~=3.0.0]
 cmake/[>1.1 || 0.8]@bincrafters/stable
 spdlog/[~1.2.3, loose=False, include_prerelease=True]@bincrafters/stable
