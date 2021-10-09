@@ -9,7 +9,7 @@ class Pkg(ConanFile):
                ("snappy/0.2@dummy/stable", "override"),
                ("wayland/2.1@coder/beta", "private")]
 
-   requires = (("libuv/1.0@user/stable", "private"), )
+   requires = (("libuv/1.41.1 ", "private"), )
    requires = ('ninja/1.0@user/stable', ("tinyspline/3.0@other/beta", "override"))
    requires = "c-ares/[>1.0 <1.8]@user/stable"
 
