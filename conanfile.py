@@ -2,7 +2,7 @@ from conans import ConanFile
 
 class Pkg(ConanFile):
    python_requires = "pybind11/0.1"  # recipe to reuse code from
-   build_requires = "toml/0.2@user/testing", 'libsass/0.2@user/testing'
+   build_requires = "toml11/[>3.0 <3.6 loose=False, include_prerelease=True]", 'libsass/0.2@user/testing'
    requires = 'tl-function-ref/1.0', "zulu-openjdk/2.1@otheruser/testing"
 
    requires = [("optional-lite/0.1@user/testing"),
@@ -11,12 +11,12 @@ class Pkg(ConanFile):
 
    requires = (("libuv/1.0@user/stable", "private"), )
    requires = ('ninja/1.0@user/stable', ("tinyspline/3.0@other/beta", "override"))
-   requires = "c-ares/[>1.0 <1.8]@user/stable"
+   requires = "c-ares/[>1.0 <1.8 loose=False]@user/stable"
 
 
 def requirements(self):
    if self.options.myoption:
-      self.requires('c-blosc/1.2@drl/testing')
+      self.requires('c-blosc/[~=1.0 include_prerelease=True]@drl/testing')
    else:
       self.requires("c-blosc/2.2@drl/stable")
       self.requires("dbus/1.2@drl/testing", private=True, override=False)
