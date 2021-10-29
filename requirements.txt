@@ -1,0 +1,6 @@
+requests==2.24.0
+conan==1.36.0
+gitpython==3.1.8
+lcov_cobertura==1.6
+openpyxl==3.0.5
+yattag==1.14.0
