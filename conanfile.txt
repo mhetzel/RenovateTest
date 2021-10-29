@@ -3,7 +3,7 @@
 platformsdk/5.0.20210712-T1759Z+b563c1478@isg-mtg/dev
 
 [build_requires]
-catch2/2.9.2
+catch2/2.13.7
 fakepackage/5.45
 aws-c-cal/0.5.12@bad/digest
 aws-c-common/[>0.6.7 <1.6.11]
