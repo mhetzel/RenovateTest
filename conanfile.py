@@ -44,7 +44,7 @@ class Pkg(ConanFile):
     python_requires_extend = 'commsbase.ConfigBase'
       
     python_requires = "pybind11/0.1"  # recipe to reuse code from
-    build_requires = "toml11/[>3.0 <3.6 loose=False, include_prerelease=True]", 'libsass/0.2'
+    build_requires = "toml11/[>3.0 <3.6 loose=False, include_prerelease=True]", 'libsass/3.6.5'
     requires = 'tl-function-ref/1.0', "zulu-openjdk/2.1"
 
     requires = [("optional-lite/0.1"),
