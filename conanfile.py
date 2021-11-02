@@ -59,7 +59,7 @@ class Pkg(ConanFile):
        if self.options.myoption:
            self.requires('c-blosc/[~=1.17 include_prerelease=True]')
        else:
-           self.requires("dbus/1.2@", private=True, override=False)
+           self.requires("dbus/1.12.20@", private=True, override=False)
 
 
     def build_requirements(self):
