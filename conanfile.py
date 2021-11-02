@@ -47,7 +47,7 @@ class Pkg(ConanFile):
     build_requires = "toml11/[>3.0 <3.6 loose=False, include_prerelease=True]", 'libsass/0.2'
     requires = 'tl-function-ref/1.0', "zulu-openjdk/2.1"
 
-    requires = [("optional-lite/0.1"),
+    requires = [("optional-lite/3.5.0"),
                ('wayland/2.1', "private")]
 
     requires = (("libuv/1.15.0@bincrafters/stable", "private"), )
