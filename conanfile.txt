@@ -1,5 +1,5 @@
 [requires]
-7zip/16.00
+7zip/19.00
 platformsdk/5.0.20210712-T1759Z+b563c1478@isg-mtg/dev
 
 [build_requires]
