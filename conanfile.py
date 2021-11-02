@@ -51,7 +51,7 @@ class Pkg(ConanFile):
                ('wayland/2.1', "private")]
 
     requires = (("libuv/1.15.0@bincrafters/stable", "private"), )
-    requires = ('ninja/1.0', ("snappy/0.2", "override"))
+    requires = ('ninja/1.10.2', ("snappy/0.2", "override"))
     requires = "c-ares/[>1.0 <1.8 loose=False]"
 
 
