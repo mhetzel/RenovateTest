@@ -45,7 +45,7 @@ class Pkg(ConanFile):
       
     python_requires = "pybind11/0.1"  # recipe to reuse code from
     build_requires = "toml11/[>3.0 <3.6 loose=False, include_prerelease=True]", 'libsass/0.2'
-    requires = 'tl-function-ref/1.0', "zulu-openjdk/2.1"
+    requires = 'tl-function-ref/1.0', "zulu-openjdk/11.0.12"
 
     requires = [("optional-lite/0.1"),
                ('wayland/2.1', "private")]
