@@ -6,7 +6,7 @@ platformsdk/5.0.20210712-T1759Z+b563c1478@isg-mtg/dev
 catch2/2.9.2
 fakepackage/5.45
 aws-c-cal/0.5.12@bad/digest
-aws-c-common/[>0.6.7 <1.6.11]
+aws-c-common/[>0.6.15 <1.6.11]
 tinyspline/[0.2.0]
 asio/[~=1.18]
 cmake/[>3.17.2 || 3.15.7] 
